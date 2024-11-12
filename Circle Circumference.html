@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html, body {
+            display: flex;
+            justify-content: center;          
+        }
+    </style>
+</head>
+
+<body>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Area of Parallelogram.html">Area of Parallelogram</a></li>
+        <li><a href="Area of Sqaure.html">Area of Square</a></li>
+        <li><a href="index.html">Average Calculation</a></li>
+        <li><a href="CircleArea.html">Area of Cirlce</a></li>
+		<li><a href="Cuboid Volume.html">Volume of Cuboid</a></li>
+		<li><a href="Days to Hours.html">Days to Hours</a></li>
+		 <li><a href="Distance Travelled.html">Distance Travelled Conversion</a></li>
+        <li><a href="Gallons and Litres.html">Gallons and Litres Conversion</a></li>
+        <li><a href="Inches and Centimeters.html">Inches to Centimetres Conversion</a></li>
+        <li><a href="Item Cost.html">Item Cost</a></li>
+		<li><a href="Kilo to Metres.html">Kilometres to Metres Conversion</a></li>
+		<li><a href="Kilograms to Pounds.html">Kilograms to Pounds Conversion</a></li>
+		 <li><a href="Minutes and Second.html">Minutes to Seconds Conversion</a></li>
+        <li><a href="Month Savings.html">Monthly Savings</a></li>
+        <li><a href="Payment Discount.html">Payment Discount</a></li>
+        <li><a href="product.html">Product Calculation</a></li>
+		<li><a href="Rectangle Perimeter.html">Perimeter of Rectangle</a></li>
+		<li><a href="Sales Tax.html"> Sales Tax</a></li>
+		 <li><a href="Simple Interest.html">Simple Interest Calulation</a></li>
+        <li><a href="Square Number.html">Number Squared Calculation</a></li>
+        <li><a href="sum.html">Addition</a></li>
+        <li><a href="Total Marks.html">Total Marks</a></li>
+		<li><a href="Triangle Area.html">Area of Triangle</a></li>
+		<li><a href="Weekly Salary.html">Salary Calculation</a></li>
+		
+		
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div>
+<h2>Add Two Numbers</h2>
+<form>
+  <label for="fnumber">Radius:</label><br>
+  <input type="number" id="fnumber" name="fnumber"><br>
+  
+<button type="button" onclick="printCircumferenceToScreen()">Circumference</button>
+</form> 
+
+ <p id="result"></p>
+ </div>
+<script>
+function printCircumferenceToScreen() {
+   let Circumference = (parseFloat(fnumber.value) * 3.14 * 2 );
+   document.getElementById('result').textContent = `The circumference is: ${Circumference}`;
+}
+</script>
+</body>
+</html>

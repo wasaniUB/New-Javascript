@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Area of Parallelogram.html">Area of Parallelogram</a></li>
+        <li><a href="Area of Sqaure.html">Area of Square</a></li>
+        <li><a href="Circle Circumference.html">Circumference of Circle</a></li>
+        <li><a href="CircleArea.html">Area of Cirlce</a></li>
+		<li><a href="Cuboid Volume.html">Volume of Cuboid</a></li>
+		<li><a href="Days to Hours.html">Days to Hours</a></li>
+		 <li><a href="Distance Travelled.html">Distance Travelled Conversion</a></li>
+        <li><a href="Gallons and Litres.html">Gallons and Litres Conversion</a></li>
+        <li><a href="Inches and Centimeters.html">Inches to Centimetres Conversion</a></li>
+        <li><a href="Item Cost.html">Item Cost</a></li>
+		<li><a href="Kilo to Metres.html">Kilometres to Metres Conversion</a></li>
+		<li><a href="Kilograms to Pounds.html">Kilograms to Pounds Conversion</a></li>
+		 <li><a href="Minutes and Second.html">Minutes to Seconds Conversion</a></li>
+        <li><a href="Month Savings.html">Monthly Savings</a></li>
+        <li><a href="Payment Discount.html">Payment Discount</a></li>
+        <li><a href="product.html">Product Calculation</a></li>
+		<li><a href="Rectangle Perimeter.html">Perimeter of Rectangle</a></li>
+		<li><a href="Sales Tax.html"> Sales Tax</a></li>
+		 <li><a href="index.html">Average Calculation</a></li>
+        <li><a href="Square Number.html">Number Squared Calculation</a></li>
+        <li><a href="sum.html">Addition</a></li>
+        <li><a href="Total Marks.html">Total Marks</a></li>
+		<li><a href="Triangle Area.html">Area of Triangle</a></li>
+		<li><a href="Weekly Salary.html">Salary Calculation</a></li>
+		
+		
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <h2>Simple Interest Calculator</h2>
+    <form>
+        <label for="principal">Principal Amount ($):</label><br>
+        <input type="number" id="principal" name="principal"><br><br>
+
+        <label for="rate">Annual Interest Rate (%):</label><br>
+        <input type="number" id="rate" name="rate"><br><br>
+
+        <label for="time">Time (years):</label><br>
+        <input type="number" id="time" name="time"><br><br>
+
+        <button type="button" onclick="calculateInterest()">Calculate Interest</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateInterest() {
+            // Retrieve the values from input fields
+            const principal = parseFloat(document.getElementById('principal').value);
+            const rate = parseFloat(document.getElementById('rate').value);
+            const time = parseFloat(document.getElementById('time').value);
+
+            // Calculate simple interest
+            const interest = (principal * rate * time) / 100;
+
+            // Display the result
+            document.getElementById('result').textContent = `The simple interest is $${interest.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
